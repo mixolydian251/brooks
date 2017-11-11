@@ -1,0 +1,288 @@
+$primary: rgb(65, 129, 178);
+$secondary: #ffffff;
+$complementary: #a6a6a6;
+$background: #f3f6f9;
+$black: ($primary - 60);
+$important: #d3434b;
+
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+html{
+    background-color: $background;
+}
+
+.address{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    min-width: 238px;
+    max-height: 80px;
+}
+
+.calendarSvg{
+    height: 160px;
+}
+
+.columnBox{
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid $complementary;
+    width: 90%;
+    min-width: 238px;
+    min-height: 210px;
+    h4{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+}
+.columnBox:hover{
+    background-color: $secondary - 35;
+    cursor: pointer;
+}
+
+
+.date{
+    width: 270px;
+    border: 1px solid $complementary + 40;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    box-shadow: 0 -4px 8px white - 50;
+    margin-top: 25px;
+    height: 125px;
+    background-color: $primary;
+    border: 1px solid $primary - 20;
+    border-bottom: none;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    .copyright{
+        font-size: 13px;
+        font-weight: 200;
+        text-align: start;
+        width: 100%;
+        p{
+            margin: 0;
+            padding-left: 5px;
+            padding-bottom: 5px;
+        }
+    }
+    .links{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width : 100%;
+        height: 100%;
+
+        a{
+            font-size: 23px;
+            font-weight: 900;
+            color: white;
+            text-decoration: none;
+        }
+
+
+    }
+}
+
+.frontPageContainer{
+    background-color: $background;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.frontPageLeft{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    max-height: 507px;
+    min-height: 115px;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.frontPageMiddle{
+    background-color: $secondary;
+    border: 1px solid $complementary;
+    display: flex;
+    width: 90%;
+    height: 503px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    h3{
+        text-align: center;
+        margin-top: 0;
+    }
+    p{
+        padding-left: 11%;
+        padding-right: 10%
+    }
+
+}
+.frontPageRight{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 100%;
+}
+
+
+.header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    background-color: $primary;
+    border: 2px solid $primary - 20;
+    border-top: none;
+    box-shadow: 0 4px 9px white - 30;
+    h2{
+        text-shadow: 1px 1px 0 $primary - 60;
+        padding-left: 18px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    h3{
+        text-shadow: 1px 1px 1px $primary - 40;
+        padding-left: 18px;
+        margin-top: 5px;
+        margin-bottom: 20px
+    }
+
+}
+
+.introBox{
+    @extend .frontPageMiddle;
+    border:none;
+    width: 100%;
+}
+
+.logo{
+    padding-right: 10px;
+    padding-left: 5vw;
+    height: 90px;
+}
+
+.map{
+    border: 1px solid $complementary;
+    width: 90%;
+    min-width: 238px;
+    height: 210px;
+}
+
+
+.menu{
+    border: 1px solid $complementary;
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 80%;
+    height: 503px;
+    min-height: 335px;
+    min-width: 111px;
+    .menuOption:hover{
+        color: $primary + 30;
+        cursor: pointer;
+    }
+}
+
+.modalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.modal{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: fit-content;
+    h1{
+        margin: 0;
+        font-size: 30px;
+        color: #111111
+    }
+    h2{
+        margin: 0;
+        font-size: 18px;
+        color: $complementary
+    }
+    button{
+        margin: 3px;
+        padding: 10px;
+        font-size: 16px;
+        height: fit-content;
+        width: fit-content;
+        color: white;
+        background-color: $important;
+        border-bottom: 2px solid $important - 50;
+        border-right: 2px solid $important - 50;
+        border-top: 2px solid $important + 50;
+        border-left: 2px solid $important + 50;
+    }
+}
+.modal:focus{
+    outline-color: $complementary;
+}
+
+.modalButton{
+    width: 90%;
+    border: none;
+    padding: 0;
+    background-color: $secondary;
+    .columnBox{
+        width: 100%
+    }
+}
+
+.nextDate{
+    text-align: center;
+    h2{
+        color: $important;
+        text-shadow: 1px 1px 0 $secondary - 60;
+        margin-bottom: 10px;
+    }
+    h3{
+        text-shadow: 1px 1px 0 $secondary + 20;
+    }
+}
+
+.socialIcon{
+    height: 40px;
+}
