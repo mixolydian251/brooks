@@ -1,0 +1,46 @@
+
+
+.invite-grid-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: .3em;
+    grid-template-areas:
+            "title title"
+            "sun   wed"
+            "pass  pass";
+    margin: 0;
+    h2, h3, h4 {
+        text-align: center;
+    }
+    h4{
+        font-weight: normal;
+    }
+    .grid-invite-title{
+        grid-area: title;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    h3, p{
+        margin: 0;
+    }
+    p{
+        padding: 2em 1em;
+    }
+    .grid-sunday{
+        grid-area: sun;
+        background-color: #ffffff;
+    }
+    .grid-wednesday{
+        grid-area: wed;
+        background-color: #ffffff;
+    }
+    .grid-passage{
+        grid-area: pass;
+        background-color: #ffffff;
+        height: fit-content;
+    }
+}

@@ -1,0 +1,62 @@
+$primary: rgba(65, 129, 178, 0.81);
+
+.front-page-wrapper{
+  display: grid;
+  grid-area: content;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  grid-template-areas:
+          "date    calendar"
+          "invite  address"
+          "invite  map";
+
+
+  .grid-date{
+    grid-area: date;
+    background-color: #ffffff;
+    border: 1px solid #303C6C;
+  }
+
+  .grid-invite{
+    grid-area: invite;
+    background-color: $primary;
+    border: 1px solid #303C6C;
+  }
+
+  .grid-calendar{
+    background-color: white;
+    border: 1px solid #303C6C;
+    grid-area: calendar;
+  }
+
+  .grid-address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    grid-area: address;
+    border: 1px solid #303C6C;
+    padding: 0 1em;
+  }
+
+  .grid-map{
+    max-height: 100%;
+    grid-area: map;
+    border: 1px solid #303C6C;
+  }
+}
+
+
+@media only screen and (max-width: 804px) {
+  .front-page-wrapper {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+            "date"
+            "calendar"
+            "address"
+            "map"
+            "invite";
+  }
+}

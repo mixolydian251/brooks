@@ -6,16 +6,27 @@ hr{
   margin: 0
 }
 
-span{
+.day-block{
   font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vw;
   width: 10vw;
-  max-height: 55px;
-  max-width: 55px;
+  max-height: 50px;
+  max-width: 50px;
   margin: 3px;
+}
+
+.circled-date{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #d3434b;
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
 }
 
 .row{

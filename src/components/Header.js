@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 const logo = require('../img/brooksLogo.svg');
 
 const Header = () => (
@@ -8,7 +9,7 @@ const Header = () => (
             <h3>Food Bank & Clothing Closet</h3>
         </div>
         <div>
-            <img className="logo" src={logo}/>
+            <NavLink to="/" exact={true}><img className="logo" src={logo}/></NavLink>
         </div>
     </div>
 );

@@ -28,6 +28,6 @@ module.exports = {
     devtool: 'cheap-module-eval-source-map', // show my code in console when I run into an error instead of bundle.js
     devServer: {
         contentBase: path.join(__dirname, 'public'),
-        historyApiFallback: true,
+        historyApiFallback: true
     }
 };

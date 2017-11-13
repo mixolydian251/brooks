@@ -1,13 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Menu = (props) => (
         <div className="menu">
-            <div className="menuOption"><h4>About</h4></div>
-            <div className="menuOption"><h4>Food</h4></div>
-            <div className="menuOption"><h4>Clothing</h4></div>
-            <div className="menuOption"><h4>Donations</h4></div>
-            <div className="menuOption"><h4>Volunteer</h4></div>
-            <div className="menuOption"><h4>Contact</h4></div>
+            <NavLink to="/" exact={true} className="menuOption" activeClassName="is-active">Home</NavLink>
+            <NavLink to="/about" className="menuOption" activeClassName="is-active">About</NavLink>
+            <NavLink to="/food" className="menuOption" activeClassName="is-active">Food</NavLink>
+            <NavLink to="/clothing" className="menuOption" activeClassName="is-active">Clothing</NavLink>
+            <NavLink to="/donations" className="menuOption" activeClassName="is-active">Donations</NavLink>
+            <NavLink to="/volunteer" className="menuOption" activeClassName="is-active">Volunteer</NavLink>
+            <NavLink to="/contact" className="menuOption" activeClassName="is-active">Contact</NavLink>
         </div>
 );
 

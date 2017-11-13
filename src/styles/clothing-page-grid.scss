@@ -1,0 +1,92 @@
+.clothing-page-wrapper{
+  background-color: #f3f6f9 ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+          "title  title  title  title  title  title "
+          "guide  guide  guide  guide  guide  guide"
+          "men    men    women  women  child  child"
+          "misc   misc   misc   limit  limit  limit";
+  grid-gap: 1em;
+
+  li{
+    padding: .6em .6em 2em 0;
+  }
+  p{
+    padding: 0 2em;
+  }
+  h3{
+    text-decoration: underline;
+  }
+  div {
+    background-color: white;
+    border: 1px solid #303C6C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .grid-title{
+    grid-area: title;
+    h1{
+      color: #d3434b;
+    }
+  }
+
+  .grid-guidelines{
+    grid-area: guide;
+  }
+
+  .grid-men{
+    p{
+      text-align: center;
+    }
+    grid-area: men;
+  }
+
+  .grid-women{
+    p{
+      text-align: center;
+    }
+    grid-area: women;
+  }
+
+  .grid-children{
+    p{
+      text-align: center;
+    }
+    grid-area: child;
+  }
+
+  .grid-miscellaneous{
+    p{
+      text-align: center;
+    }
+    grid-area: misc;
+  }
+
+  .grid-limited-items{
+    p{
+      text-align: center;
+    }
+    grid-area: limit;
+  }
+}
+
+
+
+@media only screen and (max-width: 804px) {
+  .clothing-page-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "title"
+            "guide"
+            "men"
+            "women"
+            "child"
+            "misc"
+            "limit";
+  }
+}

@@ -53,7 +53,7 @@ class Calendar extends React.Component {
                         fillDates={this.fillDates}/>
                 <div className="calendarInside">
                     <DayLabels/>
-                    <Day fillDates={this.fillDates} dates={this.state.dates}/>
+                    <Day fillDates={this.fillDates} dates={this.state.dates} month={this.state.month.format("M")}/>
                 </div>
             </div>
         )

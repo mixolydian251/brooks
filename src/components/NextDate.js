@@ -2,15 +2,17 @@ import React from 'react'
 
 class NextDate extends React.Component{
     state = {
-      date: 'November 11th 2017'
+      date: 'December 9th 2017'
     };
     render() {
         return (
             <div className="nextDate">
-                <h4>Next open date:</h4>
+                <div>
+                    <h4>Next open date:</h4>
+                </div>
                 <div className="date">
                     <h2>{this.state.date}</h2>
-                    <h3>9AM-12PM</h3>
+                    <h3>9am - 11:30am</h3>
                 </div>
             </div>
             )
