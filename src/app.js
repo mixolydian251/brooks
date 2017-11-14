@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Router from './routers/Router'
 import 'normalize.css/normalize.css'
 import './styles/style.scss'
+import './styles/app-grid.scss'
 import './styles/calendar.scss'
 
 
