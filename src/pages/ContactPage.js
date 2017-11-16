@@ -8,9 +8,10 @@ const ContactPage = () => (
             <h3>Located at 700 Brooks Avenue, Raleigh, North Carolina</h3>
             <p>(The office is located in the small building in the parking lot of the church)</p>
             <h2>Office Hours</h2>
-            <h3>9am - 4pm Mon - Fri</h3>
+            <h3>9am - 4pm</h3>
+            <p>(Monday - Friday)</p>
             <h2>Phone Number</h2>
-            <h3>(919)-821-2400</h3>
+            <a href="tel:9198212400"><h3>(919)-821-2400</h3></a>
         </div>
     </div>
 );

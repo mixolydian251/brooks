@@ -4,7 +4,7 @@ const VolunteerPage = () => (
     <div className="page-content-wrapper">
         <div><h1>Volunteer</h1></div>
         <div>
-            <ul>
+
                 <h4> Are you looking for a way to give back to your community? Do you need hours for
                     a community service requirement? Or maybe you are just looking for something fun
                     to do one Saturday morning. Whatever you reason, we would love to have you as a
@@ -18,7 +18,6 @@ const VolunteerPage = () => (
                 </p>
 
                 <p> If you are interested in volunteering please contact the office for more information. </p>
-            </ul>
         </div>
     </div>
 );
